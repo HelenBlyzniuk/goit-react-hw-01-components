@@ -1,5 +1,9 @@
-import { user } from '../user.json';
-import { Profile } from '../components/Profile/Profile';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import user from '../../src/user.json';
+import data from '../../src/data.json';
+import { Profile } from '../components/Profile';
+import { Statistics } from '../components/Statistics/Statistics';
 
 export const App = () => {
   return (
@@ -14,11 +18,16 @@ export const App = () => {
       }}
     >
       <Profile
-        user="user.username"
-        tag="user.tag"
-        location="user.location"
-        avatar="user.avatar"
-        stats="user.stats" /> 
+        user={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats} /> 
+      
+      <Statistics stats = {data}
+      />
     </div>
   );
 };
+
+ReactDOM.render(App, document.querySelector('#root'));

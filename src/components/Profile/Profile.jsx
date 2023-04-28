@@ -1,4 +1,4 @@
-// import user from '../Profile/user'
+
 import PropTypes from 'prop-types';
  export const Profile = ({
   username,
@@ -16,7 +16,7 @@ import PropTypes from 'prop-types';
           className="avatar"
         />
         <p classNameName="name">{username}</p>
-        <p className="tag">{tag}</p>
+        <p className="tag"> @{tag}</p>
         <p className="location">{location}</p>
       </div>
 
