@@ -5,7 +5,8 @@ import data from '../../src/data.json';
 import friends from '../../src/friends.json';
 import { Profile } from '../components/Profile';
 import { Statistics } from '../components/Statistics';
-import { FriendList, FriendListItem } from '../components/FriendList';
+import { FriendList } from '../components/FriendList';
+import { FriendListItem } from '../components/FriendList/FriendListItem';
 
 export const App = () => {
   return (
@@ -28,11 +29,13 @@ export const App = () => {
       
       <Statistics stats = {data}
       />
-{/* <div>
-        <FriendList friends={friends} >
-          
+
+      <FriendList
+        friends={friends}
+      cildren={FriendListItem}>
+        
         </FriendList>
-</div> */}
+
     </div>
   );
 };
