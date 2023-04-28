@@ -5,17 +5,17 @@ export const Statistics = ({
     stats
 }) => {
  return (
-        <section class="statistics">
+        <section className="statistics">
             {title !== '' && (
-                <h2 class="title">{title}</h2>
+                <h2 className="title">{title}</h2>
             )}
   
 
-         <ul class="stat-list">
+         <ul className="stat-list">
              {stats.map((data) => (
-               <li class="item">
-      <span class="label">{data.label}</span>
-      <span class="percentage">{data.percentage}</span>
+               <li className="item">
+      <span className="label">{data.label}</span>
+      <span className="percentage">{data.percentage}</span>
     </li>  
              ))}
     

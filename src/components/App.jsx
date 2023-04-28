@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import user from '../../src/user.json';
 import data from '../../src/data.json';
+import friends from '../../src/friends.json';
 import { Profile } from '../components/Profile';
-import { Statistics } from '../components/Statistics/Statistics';
+import { Statistics } from '../components/Statistics';
+import { FriendList, FriendListItem } from '../components/FriendList';
 
 export const App = () => {
   return (
@@ -26,6 +28,11 @@ export const App = () => {
       
       <Statistics stats = {data}
       />
+{/* <div>
+        <FriendList friends={friends} >
+          
+        </FriendList>
+</div> */}
     </div>
   );
 };

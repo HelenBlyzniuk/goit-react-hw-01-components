@@ -15,7 +15,7 @@ import PropTypes from 'prop-types';
           alt="User avatar"
           className="avatar"
         />
-        <p classNameName="name">{username}</p>
+        <p className="name">{username}</p>
         <p className="tag"> @{tag}</p>
         <p className="location">{location}</p>
       </div>
