@@ -4,9 +4,12 @@ import ReactDOM from 'react-dom';
 import user from '../../src/user.json';
 import data from '../../src/data.json';
 import friends from '../../src/friends.json';
+import transactions from '../../src/transactions.json';
+
 import { Profile } from '../components/Profile';
 import { Statistics } from '../components/Statistics';
 import { FriendList } from '../components/FriendList';
+import { TransactionHistory } from '../components/TransactionHistory';
 
 
 export const App = () => {
@@ -35,6 +38,9 @@ export const App = () => {
         friends={friends}
       />
         
+      <TransactionHistory
+        data={transactions}
+      />
     </div>
   );
 };
