@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
-
-
+// import css from './FriendListItem.module.css';
+// console.log(css);
 export const FriendListItem = ({ id, isOnline, avatar, name}) => {
     return (
         <li key={id} className="item" 
@@ -12,14 +12,27 @@ export const FriendListItem = ({ id, isOnline, avatar, name}) => {
                 gap:50,
                 alignItems: "center"
             }} >
-            <span className="status" style={{display:"block",
+            {isOnline === true && (
+                <span className="status" style={{
+                    display: "block",
                     marginLeft: 50,
                     width: 20,
                     height:20,
                     border: "none",
                     borderRadius:"100%", 
                     backgroundColor:"pink",}}
-            >{isOnline}</span>
+                >{isOnline}</span>)}
+            {isOnline === false && (
+                <span className="status" style={{
+                    display: "block",
+                    marginLeft: 50,
+                    width: 20,
+                    height:20,
+                    border: "none",
+                    borderRadius:"100%", 
+                    backgroundColor:"teal",}}
+            >{isOnline}</span>)}
+            
             <img className="avatar"
                 style={{
                     display:"block",
