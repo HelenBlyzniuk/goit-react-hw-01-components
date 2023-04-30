@@ -1,0 +1,13 @@
+.transactionHistoryItem{
+    text-align:center;
+    border:solid white 1px;
+    background-color:bisque;
+    text-transform: capitalize;
+    height:40px;
+    
+}
+.transactionHistoryItem:nth-child(2n+1){
+    /* background-color: #ecac5d; */
+    color:rgb(54, 53, 53);
+    background-color: orange;
+}

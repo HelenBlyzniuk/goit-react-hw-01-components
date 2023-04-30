@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import { Transaction } from 'components/Transaction/Transaction';
-
+import css from './TransactionHistory.module.css';
 
 export const TransactionHistory = ({ data }) => {
     return (
-        <table className="transaction-history">
-  <thead>
+        <table className={css.transactionHistory}>
+  <thead className={css.transactionHistoryHead}>
     <tr>
       <th>Type</th>
       <th>Amount</th>

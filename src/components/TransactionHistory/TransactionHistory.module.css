@@ -1,0 +1,14 @@
+.transactionHistory{
+    width: 700px;
+    margin:0 auto;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.transactionHistoryHead{
+    font-size:20px;
+    color:aliceblue;
+    background-color:orangered;
+    height:40px;
+    
+}
