@@ -14,7 +14,8 @@ export const TransactionHistory = ({ data }) => {
   </thead>
   <tbody>
                 {data.map(option => (
-                    <Transaction
+                  <Transaction
+                        key={option.id}
                         id={option.id}
                         type={option.type}
                         amount={option.amount}

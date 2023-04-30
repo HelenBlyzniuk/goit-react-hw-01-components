@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 import user from '../../src/user.json';
 import data from '../../src/data.json';
@@ -17,7 +16,7 @@ export const App = () => {
     <div
       style={{
         height: '100vh',
-        display: 'flex',
+        display: 'block',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -45,4 +44,3 @@ export const App = () => {
   );
 };
 
-ReactDOM.render(App, document.querySelector('#root'));

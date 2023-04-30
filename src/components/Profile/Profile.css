@@ -1,0 +1,62 @@
+.profile{
+    margin:0 auto;
+    width:500px;
+    font-size: 20px;
+    position: relative;
+    
+}
+.description{
+    width:400px;
+    height:400px;
+    background-color: blueviolet;
+    margin: 0 auto;
+    padding-top:25px;
+    font-weight: 900;
+    
+}
+.avatar{
+    width:200px;
+    margin: 0 auto;
+    border:solid black 2px;
+}
+.location, .tag{
+    margin-left:100px;
+    margin-top: 10px;
+    color:aliceblue;
+}
+
+
+.stats{
+    display:flex;
+    width:400px;
+    list-style: none;
+    margin:0;
+    position:absolute;
+    left:10px;
+    bottom: 0;
+    
+}
+.statsItem{
+    width:calc(400px /3);
+    height:75px;
+    text-align: center;
+    padding-top:20px;
+    border:solid black 1px;
+    font-weight: 700;
+    
+}
+.quantity{
+    display:block;
+    color:blueviolet;
+}
+.views{
+    background-color: aliceblue;
+}
+
+.followers{
+    background-color: aqua;
+}
+.likes{
+    background-color: blue;
+    color:aliceblue;
+}
