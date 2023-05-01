@@ -34,9 +34,9 @@ border: none;
 border-radius:100%; 
 background-color:${(props=>{
     switch(props.type){
-        case true:
+        case "true":
             return 'teal';
-        case false:
+        case "false":
             return 'pink';
         default:
             return 'blue';
