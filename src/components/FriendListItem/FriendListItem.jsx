@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-// import css from './FriendListItem.module.css';
-// console.log(css);
+
 export const FriendListItem = ({ id, isOnline, avatar, name}) => {
     return (
         <li key={id} className="item" 
             style={{
                 display: "flex",
-                width: 500, border: "solid grey 1px",
+                width: 500,
+                border: "solid grey 1px",
                 margin: "0 auto",
                 gap:50,
                 alignItems: "center"
