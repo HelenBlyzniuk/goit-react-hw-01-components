@@ -24,7 +24,9 @@ export const FriendListStyled = ({ friends }) => {
 
 
 
-FriendListStyled.propTypes = {
-    friends: PropTypes.array.isRequired,
-    
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(PropTypes.shape({
+        id:PropTypes.number.isRequired,
+    })),  
 }
+
