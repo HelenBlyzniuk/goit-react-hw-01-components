@@ -1,3 +1,5 @@
+
+
 .profile{
     margin:0 auto;
     width:500px;
@@ -7,7 +9,7 @@
 }
 .description{
     width:400px;
-    height:400px;
+    height:450px;
     background-color: blueviolet;
     margin: 0 auto;
     padding-top:25px;
@@ -15,6 +17,7 @@
     
 }
 .avatar{
+    display:block;
     width:200px;
     margin: 0 auto;
     border:solid black 2px;
@@ -22,9 +25,12 @@
 .location, .tag{
     margin-left:100px;
     margin-top: 10px;
-    color:aliceblue;
+    color:white;
 }
-
+.name{
+color: white;
+margin-left: 100px;
+}
 
 .stats{
     display:flex;
@@ -33,7 +39,7 @@
     margin:0;
     position:absolute;
     left:10px;
-    bottom: 0;
+    bottom: 0px;
     
 }
 .statsItem{
@@ -43,20 +49,24 @@
     padding-top:20px;
     border:solid black 1px;
     font-weight: 700;
+    background-color: aliceblue;
     
 }
+.statsItem:first-child{
+    background-color: aqua;
+}
+
+
 .quantity{
     display:block;
     color:blueviolet;
 }
-.views{
-    background-color: aliceblue;
-}
+
 
 .followers{
     background-color: aqua;
 }
-.likes{
+.statsItem:last-child{
     background-color: blue;
     color:aliceblue;
 }

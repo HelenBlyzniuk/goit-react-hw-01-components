@@ -3,7 +3,7 @@ import css from './transaction.module.css';
 
 export const Transaction = ({ id, type, amount, currency }) => {
     return (
-      <tr className={css.transactionHistoryItem} key={id}>
+      <tr className={css.transactionHistoryItem}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>
@@ -13,7 +13,7 @@ export const Transaction = ({ id, type, amount, currency }) => {
 }
  
 Transaction.propTypes = {
-    id: PropTypes.string.isRequired,
+    
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency:PropTypes.string.isRequired,
